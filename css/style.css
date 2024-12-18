@@ -1,0 +1,708 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 40px 0 30px;
+}
+
+body{
+    font-family: "Jura", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: #090909;
+}
+
+
+.header{
+
+}
+
+.header-main{
+    /*background-color: transparent;*/
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.header__inner{
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list{
+    display: flex;
+    gap: 255px;
+    z-index: 6;
+    
+}
+
+.menu__list-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu__list-link:hover{
+    background-color: #9CC437;
+}
+
+.angles{
+    display:flex;
+    align-items:flex-start;
+    list-style:none; 
+}
+
+.line{
+    padding-left: 350px;
+}
+
+.angles li{
+    width:15px;
+    height:15px;
+    border:3px solid #9CC437;
+    border-left:none;
+    border-bottom:none;
+    transform:rotate(-37deg) skewX(14deg);
+    transform-origin:center;
+    margin-right:10px;
+  }
+
+
+.footer{
+    background-color: #090909;
+    padding: 50px 0 50px;
+    color: #fff;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.footer__menu-list{
+    max-width: 300px;
+}
+
+.footer__menu-img{
+
+}
+
+.footer__menu-link{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer__menu-item{
+    padding-top: 10px;
+}
+
+.footer__menu-logo{
+    padding-top: 25px;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.top{
+    color: #fff;
+    text-align: center;
+    max-width: 850px;
+    padding-top: 240px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.title{
+    padding-top: 150px;
+    padding-bottom: 15px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.down{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.top__link{
+    padding: 20px;
+    max-width: 450px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    outline: 3px groove #9CC437;
+    border-radius: 10px;
+}
+
+.top__link:hover{
+    background-color: #9CC437;
+}
+
+.name{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: none;
+}
+
+.zadnik{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.marquee-infinite{
+    margin: 30px auto;
+    font-weight: 400;
+    color: #fff;
+    background-color: #9CC437;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.marquee-infinite div{
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 5s linear infinite;
+}
+
+.marquee-infinite h2{
+    white-space: nowrap;
+    width: 100%;
+}
+
+@keyframes marquee-infinite {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.about-us{
+    padding-top: 150px;
+    color: #fff;
+    text-align: left;
+
+}
+
+.about-us-title{
+    padding-bottom: 50px;
+
+}
+
+.about-us__item-info{
+    padding-bottom: 50px;
+    max-width: 900px;
+
+}
+
+.about-us__item-title{
+    padding-bottom: 50px;
+    max-width: 900px;
+
+}
+
+.about-us__img{
+    float: right;
+    padding-top: 100px;
+    padding-right: 200px;
+}
+
+.brands{
+    padding-top: 300px;
+    color: #fff;
+}
+
+.swiper-slide{
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    padding-bottom: 500px;
+    height: 100px;
+}
+
+.models-title{
+    padding-top: 150px;
+    color: #fff;
+}
+
+.models__list{
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.button{
+    padding-top: 100px;
+    padding-left: 850px;
+    padding-bottom: 30px;
+}
+
+.models__link{
+    padding: 20px;
+    max-width: 500px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    outline: 3px groove #9CC437;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.models__link:hover{
+    background-color: #9CC437;
+}
+
+
+.models-list{
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+.models__item{
+    padding-top: 100px;
+}
+
+.about-school{
+    color: #fff;
+    padding-top: 100px;
+}
+
+.about-school__list{
+    padding-top: 230px;
+}
+
+.about-school__item1{
+    color: #9CC437;
+    max-width: 700px;
+    font-weight: 700;
+    float: right;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.about-school__item2{
+    color: #fff;
+    max-width: 700px;
+    float: right;
+}
+
+.about-school__img{
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.parametr{
+    padding-top: 300px;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 400px;
+}
+
+.parametr__title{
+    padding-bottom: 50px;
+    padding: 20px;
+    max-width: 500px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #9CC437;
+    color: #fff;
+}
+
+.parametr-title__item{
+    padding-top: 50px;
+}
+
+.parametr__img{
+    float: right;
+    padding-top: 300px;
+    padding-right: 400px;
+    padding-bottom: 30px;
+}
+
+.card-katalog{
+    padding-top: 300px;
+    padding-left: 400px;
+}
+
+.card-katalog-item{
+    padding-top: 100px;
+}
+
+@media (max-width:1580px) {
+    .title{
+        font-size: 40px;
+        padding-top: 60px;
+    }
+
+    .angles li{
+        display: none;
+    }
+}
+
+@media (max-width:1440px){
+    .menu__list{
+        gap: 220px;
+        padding-left: 55px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .about-us__img{
+        padding-right: 40px;
+    }
+
+    .about-us-title{
+        padding-left: 40px;
+    }
+
+    .about-us__item-info{
+        padding-left: 40px;
+    }
+
+    .about-us__item-title{
+        padding-left: 40px;
+    }
+
+    .about-us__item-text{
+        padding-left: 40px;
+    }
+
+    .models-title{
+        padding-left: 40px;
+    }
+
+    .capec{
+        max-width: 400px;
+    }
+
+    .button{
+        padding-left: 650px;
+    }
+
+    .about-school{
+        padding-left: 40px;
+    }
+
+    .about-school__img{
+        padding-left: 40px;
+    }
+
+    .about-school__item1{
+        padding-right: 40px;
+    }
+
+    .about-school__item2{
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:1350px) {
+    .title{
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .zadnik{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .line{
+        display: none;
+    }
+}
+
+@media (max-width:1250px) {
+    .zadnik{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .line{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    .menu__list{
+        padding-left: 120px;
+        font-size: 20px;
+        gap: 100px;
+    }
+
+    .header__inner{
+        padding-top: 70px;
+    }
+
+    .top{
+        padding-top: 150px;
+        padding-left: 160px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .about-us__img{
+        padding-right: 10px;
+    }
+
+    .brands-title{
+        padding-left: 40px;
+    }
+
+    .swiper-slide{
+        background-size: 300px;
+    }
+
+    .button{
+        padding-left: 450px;
+    }
+
+    .capec{
+        max-width: 250px;
+    }
+
+    .about-school__img{
+        max-width: 300px;
+    }
+
+    .about-school__list{
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width:768px){
+    .line{
+        display: flex;
+    }
+
+    .menu__list{
+        padding-left: 150px;
+        gap: 50px;
+        font-size: 15px;
+    }
+    
+    .title{
+        font-size: 20px;
+        max-width: 500px;
+        padding-left: 20px;
+    }
+
+    .container{
+        padding-right: 170px;
+        padding-top: 20px;
+    }
+
+    .down{
+        display: none;
+    }
+
+    .zadnik{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header__inner{
+        padding-top: 50px;
+    }
+
+    .about-us__img{
+        width: 300px;
+        padding-top: 150px;
+        padding-right: 10px;
+    }
+
+    .brands{
+        padding-top: 100px;
+    }
+
+    .swiper-slide{
+        background-size: 200px;
+    }
+
+    .models-title{
+        padding-top: 50px;
+    }
+
+    .models__item{
+        padding-left: 30px;
+    }
+
+    .capec{
+        max-width: 150px;
+    }
+
+    .button{
+        padding-left: 300px;
+    }
+
+    .about-school__item1{
+        padding-left: 40px;
+    }
+
+    .about-school__item2{
+        padding-left: 40px;
+    }
+
+
+}
+
+@media (max-width:320px) {
+    .title{
+        display: none;
+    }
+
+    .menu__list{
+        display: none;
+    }
+
+    .top{
+        padding-left: 100px;
+        padding-top: 90px;
+    }
+
+    .top__link{
+        font-size: 10px;
+    }
+
+    .zadnik{
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .marquee-infinite{
+        font-size: 10px;
+    }
+    
+    .about-us{
+        padding-top: 10px;
+    }
+
+    .about-us-title{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about-us__item-info{
+        font-size: 15px;
+        min-width: 300px;
+    }
+
+    .about-us__item-title{
+        font-size: 20px;
+        min-width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .about-us__item-text{
+        font-size: 15px;
+        min-width: 300px;
+    }
+
+    .models-title{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .angles li{
+        width: 10px;
+        height: 10px;
+    }
+
+    .button{
+        padding-left: 70px;
+    }
+
+    .capec{
+        max-width: 150px;
+
+    }
+
+    .about-school__img{
+        width: 300px;
+    }
+
+    .about-us__img{
+        display: none;
+    }
+
+    .brands-title{
+        max-width: 400px;
+        font-size: 20px;
+    }
+
+    .swiper-slide{
+        background-size: 80px;
+        padding: 0 0 100px;
+    }
+
+    .about-school{
+        font-size: 20px;
+    }
+
+    .about-school__item1{
+        padding-left: 300px;
+        font-size: 15px;
+        max-width: 400px;
+    }
+
+    .about-school__item2{
+        display: none;
+    }
+
+    .footer__menu-item{
+        display: none;
+    }
+
+}
